@@ -1,0 +1,51 @@
+/* Posts.css */
+
+.posts-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 2rem;
+     background-color: #070F2B; /* Background color for the container */
+     margin: 0;
+   }
+   
+   .post-card {
+     width: 100%;
+     max-width: 1000px;
+     background-color: #1B1A55; /* Background color for the card */
+     padding: 1.5rem;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     margin-bottom: 1rem;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     box-sizing: border-box; /* Ensures padding and border are included in the width */
+   }
+   
+   .post-card.expanded {
+     padding: 2rem;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+   }
+   
+   .post-title {
+     color: #9290C3; /* Color for the title */
+     margin: 0;
+     font-size: 1.25rem;
+   }
+   
+   .post-answer {
+     color: #ffffff; /* Color for the answer text */
+     margin-top: 1rem;
+   }
+   
+   @media (max-width: 600px) {
+     .post-card {
+       padding: 1rem;
+       font-size: 0.875rem;
+     }
+   
+     .post-title {
+       font-size: 1rem;
+     }
+   }
+   

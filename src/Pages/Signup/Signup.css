@@ -1,0 +1,84 @@
+/* Signup.css */
+
+.signup-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: calc(100vh - 50px); /* Match the height adjustment from the main tag */
+     background-color: #070F2B; /* Background color for the container */
+     margin: 0;
+     padding: 1rem; /* Added padding to ensure spacing on mobile */
+     overflow: hidden;
+   }
+   
+   .signup-card {
+     background-color: #1B1A55; /* Background color for the card */
+     padding: 2rem;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     width: 100%;
+     max-width: 400px;
+     box-sizing: border-box; /* Ensures padding and border are included in the width */
+     overflow: hidden; /* Ensures content does not overflow the card */
+   }
+   
+   h1 {
+     margin-bottom: 1rem;
+     color: #9290C3; /* Color for the heading */
+     text-align: center;
+   }
+   
+   .signup-form {
+     display: flex;
+     flex-direction: column;
+   }
+   
+   label {
+     margin-bottom: 0.5rem;
+     color: #535C91; /* Color for the labels */
+   }
+   
+   input {
+     width: 100%;
+     padding: 0.75rem;
+     margin-bottom: 1rem;
+     border: 1px solid #535C91; /* Border color to make inputs visible */
+     border-radius: 4px;
+     box-sizing: border-box; /* Ensures padding and border are included in the width */
+   }
+   
+   button {
+     width: 100%;
+     padding: 0.75rem;
+     background-color: #9290C3; /* Button color */
+     border: none;
+     border-radius: 4px;
+     color: #ffffff;
+     font-size: 1rem;
+     cursor: pointer;
+     box-sizing: border-box; /* Ensures padding and border are included in the width */
+   }
+   
+   button:hover {
+     background-color: #535C91; /* Button hover color */
+   }
+   
+   @media (max-width: 600px) {
+     .signup-container {
+       padding: 1rem;
+     }
+   
+     .signup-card {
+       padding: 1rem;
+       max-width: 100%;
+     }
+   
+     h1 {
+       font-size: 1.5rem;
+     }
+   
+     input, button {
+       font-size: 0.875rem;
+     }
+   }
+   
